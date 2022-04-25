@@ -1,14 +1,17 @@
+import { useContext, useState } from "react";
 import Image from "next/image";
+import MyThemeContext from "../../store/myThemeContext";
 
 export default function Header() {
-  const imgSrc: string = "/black-github.png";
-  function toggleThemeHandler(): void {
-    console.log("toggleTheme");
-  }
+  const [imgSrc, setImgSrc] = useState("/github-black.png");
+  const themeCtx = useContext(MyThemeContext);
 
+  function toggleThemeHandler(): void {
+    themeCtx.toggleThemeHandler();
+  }
   return (
     <>
-      <div className="flex justify-between bg-stone-200 dark:bg-sky-600 px-2 md:px-20 items-center backdrop-blur-sm w-full py-4">
+      <div className="flex justify-between bg-stone-200 dark:bg-stone-800 px-2 md:px-20 items-center backdrop-blur-sm w-full py-4">
         <div>
           <a
             className="flex items-center"
