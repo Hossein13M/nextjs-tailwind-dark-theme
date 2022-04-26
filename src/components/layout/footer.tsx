@@ -16,8 +16,8 @@ export default function Footer() {
             className=""
             src={imgSrc}
             alt="GitHub Logo"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
           />
           <h1 className="text-black sm:text-2xl ml-2 dark:text-white">
             Hossein Mousavi Portfolio
