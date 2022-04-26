@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { useState } from "react";
 
 export default function Footer() {
-  const [imgSrc, setImgSrc] = useState("/portfolio-black.png");
-
   return (
     <>
       <div className="flex justify-center bg-stone-200 dark:bg-stone-800 px-2 md:px-20 items-center backdrop-blur-sm w-full py-4">

@@ -1,9 +1,8 @@
-import { useContext, useState } from "react";
+import {useContext} from "react";
 import Image from "next/image";
 import MyThemeContext from "../../store/myThemeContext";
 
 export default function Header() {
-  const [imgSrc, setImgSrc] = useState("/github-black.png");
   const themeCtx = useContext(MyThemeContext);
 
   function toggleThemeHandler(): void {
