@@ -19,7 +19,7 @@ export default function Header() {
           >
             <Image
               className="dark:white-filter"
-              src='/github-black.png'
+              src='/github.png'
               alt="GitHub Logo"
               width={27}
               height={27}
