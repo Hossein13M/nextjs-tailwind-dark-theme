@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-  .white-filter{
+  .white-filter {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
+  }
+
+  .dark-filter {
+    -webkit-filter: invert(0%); /* Safari/Chrome */
+    filter: invert(0%);
   }
 }
 
