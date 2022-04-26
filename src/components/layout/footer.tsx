@@ -13,8 +13,8 @@ export default function Footer() {
           target="blank"
         >
           <Image
-            className=""
-            src={imgSrc}
+            className="dark:white-filter"
+            src='/portfolio-black.png'
             alt="GitHub Logo"
             width={30}
             height={30}
