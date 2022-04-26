@@ -4,7 +4,5 @@
 
 ![Alt Text](./public/nextJsTailwind.gif)
 
-## Link To The [Medium Article](https://nextjs-tailwind.hmousavi.dev)
-
-## Link To The [Live Demo](https://nextjs-tailwind.hmousavi.dev/)
+## Link To The [Medium Article](https://nextjs-tailwind.hmousavi.dev)  |  Link To The [Live Demo](https://nextjs-tailwind.hmousavi.dev/)
 
