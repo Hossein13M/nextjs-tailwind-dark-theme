@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .white-filter{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+  }
+}
+
 html,
 body {
   padding: 0;
