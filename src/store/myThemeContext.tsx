@@ -1,7 +1,5 @@
 import { createContext, ReactElement, useEffect, useState } from "react";
 
-type ImageName = "github" | "portfolio";
-
 const MyThemeContext = createContext({
   isDarkTheme: true,
   toggleThemeHandler: () => {},
@@ -15,14 +13,14 @@ export function MyThemeContextProvider(
   props: ThemePropsInterface
 ): ReactElement {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
-  useEffect(() => initialThemeHandler(), []);
+  useEffect(() => initialThemeHandler());
 
-  function checkLocalStorageForBeingEmpty(): boolean {
+  function isLocalStorageEmpty(): boolean {
     return !localStorage.getItem("isDarkTheme");
   }
 
   function initialThemeHandler(): void {
-    if (checkLocalStorageForBeingEmpty()) {
+    if (isLocalStorageEmpty()) {
       localStorage.setItem("isDarkTheme", `true`);
       document!.querySelector("body")!.classList.add("dark");
       setIsDarkTheme(true);
@@ -44,10 +42,6 @@ export function MyThemeContextProvider(
     setIsDarkTheme(!isDarkTheme);
     toggleDarkClassToBody();
     setValueToLocalStorage();
-  }
-
-  function imageBasedOnTheme(imageName: ImageName): string {
-    return isDarkTheme ? `${imageName}-black` : `${imageName}-white`;
   }
 
   function toggleDarkClassToBody(): void {
