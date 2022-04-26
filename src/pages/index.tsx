@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -11,10 +12,55 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex justify-center items-center">
+      <main className="flex flex-col justify-center items-center">
         <h1 className="text-2xl">
-          NEXT JS Template For Toggling themes using Tailwind CSS
+          NEXT JS Template For Toggling themes using Tailwind CSS. This is a
+          template repository that you can use for creating a new repo based on
+          it.
         </h1>
+        <div className="sm:flex">
+          <h1 className="text-2xl mt-10">
+            <a
+              href="https://github.com/hossein13m/nextjs-tailwind-dark-theme"
+              target="blank"
+            >
+              <button
+                type="button"
+                className="flex items-center py-1 sm:py-1 px-1 sm:px-2 mx-2 bg-zinc-800 text-white dark:bg-zinc-200 dark:text-black rounded"
+              >
+                <span className="mr-2">GitHub Repository</span>
+                <Image
+                  className="white-filter dark:dark-filter"
+                  src="/github.png"
+                  alt="GitHub Logo"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </a>
+          </h1>
+
+          <h1 className="text-2xl mt-10">
+            <a
+              href="https://github.com/hossein13m/nextjs-tailwind-dark-theme"
+              target="blank"
+            >
+              <button
+                type="button"
+                className="py-1 sm:py-1 px-1 sm:px-2 mx-2 bg-zinc-800 text-white dark:bg-zinc-200 dark:text-black rounded"
+              >
+                <span className="mr-2"> Medium article</span>
+                <Image
+                  className="white-filter dark:dark-filter"
+                  src="/medium.png"
+                  alt="GitHub Logo"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </a>
+          </h1>
+        </div>
       </main>
     </div>
   );
