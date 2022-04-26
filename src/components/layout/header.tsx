@@ -1,9 +1,10 @@
-import {useContext} from "react";
+import { useContext } from "react";
 import Image from "next/image";
 import MyThemeContext from "../../store/myThemeContext";
 
 export default function Header() {
-  const themeCtx = useContext(MyThemeContext);
+  const themeCtx: { isDarkMode?: boolean; toggleThemeHandler: () => void } =
+    useContext(MyThemeContext);
 
   function toggleThemeHandler(): void {
     themeCtx.toggleThemeHandler();
@@ -19,7 +20,7 @@ export default function Header() {
           >
             <Image
               className="dark:white-filter"
-              src='/github.png'
+              src="/github.png"
               alt="GitHub Logo"
               width={27}
               height={27}
