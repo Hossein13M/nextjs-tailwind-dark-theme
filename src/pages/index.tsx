@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 
           <h1 className="text-2xl mt-10">
             <a
-              href="https://github.com/hossein13m/nextjs-tailwind-dark-theme"
+              href="https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-js-app-using-context-hook-tailwindcss-336558dd4579"
               target="blank"
             >
               <button
