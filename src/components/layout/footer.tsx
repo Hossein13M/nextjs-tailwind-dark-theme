@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="flex justify-center bg-stone-200 dark:bg-stone-800 px-2 md:px-20 items-center backdrop-blur-sm w-full py-4">
         <a
           className="flex items-center"
-          href="https://hmousavi.dev"
+          href="https://hossein.dev"
           target="blank"
         >
           <Image
